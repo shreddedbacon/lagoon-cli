@@ -36,7 +36,7 @@
     
     
       
-        <title>Lagoon add - Lagoon CLI</title>
+        <title>Lagoon delete user - Lagoon CLI</title>
       
     
     
@@ -83,7 +83,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#lagoon_add" tabindex="1" class="md-skip">
+      <a href="#lagoon_delete_user" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -109,7 +109,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Lagoon add
+                Lagoon delete user
               
             </span>
           
@@ -227,8 +227,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#lagoon_add" title="lagoon add" class="md-nav__link">
-    lagoon add
+  <a href="#lagoon_delete_user" title="lagoon delete user" class="md-nav__link">
+    lagoon delete user
   </a>
   
     <nav class="md-nav">
@@ -284,14 +284,19 @@
               
                 
                 
-                  <h1>Lagoon add</h1>
+                  <h1>Lagoon delete user</h1>
                 
-                <h3 id="lagoon_add">lagoon add<a class="headerlink" href="#lagoon_add" title="Permanent link">#</a></h3>
-<p>Add a project, or add notifications and variables to projects or environments</p>
+                <h3 id="lagoon_delete_user">lagoon delete user<a class="headerlink" href="#lagoon_delete_user" title="Permanent link">#</a></h3>
+<p>Delete user from lagoon</p>
 <h4 id="synopsis">Synopsis<a class="headerlink" href="#synopsis" title="Permanent link">#</a></h4>
-<p>Add a project, or add notifications and variables to projects or environments</p>
+<p>Delete user from lagoon</p>
+<div class="codehilite"><pre><span></span><span class="n">lagoon</span><span class="w"> </span><span class="k">delete</span><span class="w"> </span><span class="k">user</span><span class="w"> </span><span class="o">[</span><span class="n">flags</span><span class="o">]</span><span class="w"></span>
+</pre></div>
+
+
 <h4 id="options">Options<a class="headerlink" href="#options" title="Permanent link">#</a></h4>
-<div class="codehilite"><pre><span></span>  <span class="o">-</span><span class="nv">h</span>, <span class="o">--</span><span class="nv">help</span>   <span class="nv">help</span> <span class="k">for</span> <span class="nv">add</span>
+<div class="codehilite"><pre><span></span>  <span class="o">-</span><span class="nv">E</span>, <span class="o">--</span><span class="nv">email</span> <span class="nv">string</span>   <span class="nv">Email</span> <span class="nv">address</span> <span class="nv">of</span> <span class="nv">the</span> <span class="nv">user</span>
+  <span class="o">-</span><span class="nv">h</span>, <span class="o">--</span><span class="nv">help</span>           <span class="nv">help</span> <span class="k">for</span> <span class="nv">user</span>
 </pre></div>
 
 
@@ -312,18 +317,7 @@
 
 <h4 id="see_also">SEE ALSO<a class="headerlink" href="#see_also" title="Permanent link">#</a></h4>
 <ul>
-<li><a href="../lagoon/">lagoon</a>    - Command line integration for Lagoon</li>
-<li><a href="../lagoon_add_group/">lagoon add group</a>    - Add group to lagoon</li>
-<li><a href="../lagoon_add_project/">lagoon add project</a>    - Add a new project to lagoon</li>
-<li><a href="../lagoon_add_project-group/">lagoon add project-group</a>    - Add project to a group in lagoon</li>
-<li><a href="../lagoon_add_project-rocketchat/">lagoon add project-rocketchat</a>  - Add a rocketchat notification to a project</li>
-<li><a href="../lagoon_add_project-slack/">lagoon add project-slack</a>    - Add a slack notification to a project</li>
-<li><a href="../lagoon_add_rocketchat/">lagoon add rocketchat</a>  - Add a new rocketchat notification</li>
-<li><a href="../lagoon_add_slack/">lagoon add slack</a>    - Add a new slack notification</li>
-<li><a href="../lagoon_add_user/">lagoon add user</a>  - Add user to lagoon</li>
-<li><a href="../lagoon_add_user-group/">lagoon add user-group</a>  - Add user to a group in lagoon</li>
-<li><a href="../lagoon_add_user-sshkey/">lagoon add user-sshkey</a>    - Add sshkey to a user</li>
-<li><a href="../lagoon_add_variable/">lagoon add variable</a>  - Add variables on environments or projects</li>
+<li><a href="../lagoon_delete/">lagoon delete</a>  - Delete a project, or delete notifications and variables from projects or environments</li>
 </ul>
                 
                   
