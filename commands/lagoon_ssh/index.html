@@ -36,7 +36,7 @@
     
     
       
-        <title>Lagoon config delete - Lagoon CLI</title>
+        <title>Lagoon ssh - Lagoon CLI</title>
       
     
     
@@ -83,7 +83,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#lagoon_config_delete" tabindex="1" class="md-skip">
+      <a href="#lagoon_ssh" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -109,7 +109,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Lagoon config delete
+                Lagoon ssh
               
             </span>
           
@@ -227,8 +227,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#lagoon_config_delete" title="lagoon config delete" class="md-nav__link">
-    lagoon config delete
+  <a href="#lagoon_ssh" title="lagoon ssh" class="md-nav__link">
+    lagoon ssh
   </a>
   
     <nav class="md-nav">
@@ -284,18 +284,21 @@
               
                 
                 
-                  <h1>Lagoon config delete</h1>
+                  <h1>Lagoon ssh</h1>
                 
-                <h3 id="lagoon_config_delete">lagoon config delete<a class="headerlink" href="#lagoon_config_delete" title="Permanent link">#</a></h3>
-<p>Delete a Lagoon instance configuration</p>
+                <h3 id="lagoon_ssh">lagoon ssh<a class="headerlink" href="#lagoon_ssh" title="Permanent link">#</a></h3>
+<p>Display the SSH command to access a specific environment in a project</p>
 <h4 id="synopsis">Synopsis<a class="headerlink" href="#synopsis" title="Permanent link">#</a></h4>
-<p>Delete a Lagoon instance configuration</p>
-<div class="codehilite"><pre><span></span><span class="n">lagoon</span><span class="w"> </span><span class="n">config</span><span class="w"> </span><span class="k">delete</span><span class="w"> </span><span class="o">[</span><span class="n">flags</span><span class="o">]</span><span class="w"></span>
+<p>Display the SSH command to access a specific environment in a project</p>
+<div class="codehilite"><pre><span></span><span class="n">lagoon</span><span class="w"> </span><span class="n">ssh</span><span class="w"> </span><span class="o">[</span><span class="n">flags</span><span class="o">]</span><span class="w"></span>
 </pre></div>
 
 
 <h4 id="options">Options<a class="headerlink" href="#options" title="Permanent link">#</a></h4>
-<div class="codehilite"><pre><span></span>  <span class="o">-</span><span class="nv">h</span>, <span class="o">--</span><span class="nv">help</span>   <span class="nv">help</span> <span class="k">for</span> <span class="nv">delete</span>
+<div class="codehilite"><pre><span></span>      <span class="o">--</span><span class="nv">conn</span><span class="o">-</span><span class="nv">string</span>        <span class="nv">Display</span> <span class="nv">the</span> <span class="nv">full</span> <span class="nv">ssh</span> <span class="nv">connection</span> <span class="nv">string</span>
+  <span class="o">-</span><span class="nv">c</span>, <span class="o">--</span><span class="nv">container</span> <span class="nv">string</span>   <span class="nv">specify</span> <span class="nv">a</span> <span class="nv">specific</span> <span class="nv">container</span> <span class="nv">name</span>
+  <span class="o">-</span><span class="nv">h</span>, <span class="o">--</span><span class="nv">help</span>               <span class="nv">help</span> <span class="k">for</span> <span class="nv">ssh</span>
+  <span class="o">-</span><span class="nv">s</span>, <span class="o">--</span><span class="nv">service</span> <span class="nv">string</span>     <span class="nv">specify</span> <span class="nv">a</span> <span class="nv">specific</span> <span class="nv">service</span> <span class="nv">name</span>
 </pre></div>
 
 
@@ -316,7 +319,7 @@
 
 <h4 id="see_also">SEE ALSO<a class="headerlink" href="#see_also" title="Permanent link">#</a></h4>
 <ul>
-<li><a href="../lagoon_config/">lagoon config</a>  - Configure Lagoon CLI</li>
+<li><a href="../lagoon/">lagoon</a>    - Command line integration for Lagoon</li>
 </ul>
                 
                   
