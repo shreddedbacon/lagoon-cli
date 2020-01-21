@@ -36,7 +36,7 @@
     
     
       
-        <title>Lagoon delete user - Lagoon CLI</title>
+        <title>Lagoon list users - Lagoon CLI</title>
       
     
     
@@ -83,7 +83,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#lagoon_delete_user" tabindex="1" class="md-skip">
+      <a href="#lagoon_list_users" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -109,7 +109,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Lagoon delete user
+                Lagoon list users
               
             </span>
           
@@ -227,8 +227,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#lagoon_delete_user" title="lagoon delete user" class="md-nav__link">
-    lagoon delete user
+  <a href="#lagoon_list_users" title="lagoon list users" class="md-nav__link">
+    lagoon list users
   </a>
   
     <nav class="md-nav">
@@ -284,19 +284,19 @@
               
                 
                 
-                  <h1>Lagoon delete user</h1>
+                  <h1>Lagoon list users</h1>
                 
-                <h3 id="lagoon_delete_user">lagoon delete user<a class="headerlink" href="#lagoon_delete_user" title="Permanent link">#</a></h3>
-<p>Delete user from lagoon</p>
+                <h3 id="lagoon_list_users">lagoon list users<a class="headerlink" href="#lagoon_list_users" title="Permanent link">#</a></h3>
+<p>List all users (alias: u)</p>
 <h4 id="synopsis">Synopsis<a class="headerlink" href="#synopsis" title="Permanent link">#</a></h4>
-<p>Delete user from lagoon</p>
-<div class="codehilite"><pre><span></span><span class="n">lagoon</span><span class="w"> </span><span class="k">delete</span><span class="w"> </span><span class="k">user</span><span class="w"> </span><span class="o">[</span><span class="n">flags</span><span class="o">]</span><span class="w"></span>
+<p>List all users in groups in lagoon, this only shows users that are in groups.</p>
+<div class="codehilite"><pre><span></span><span class="n">lagoon</span><span class="w"> </span><span class="n">list</span><span class="w"> </span><span class="n">users</span><span class="w"> </span><span class="o">[</span><span class="n">flags</span><span class="o">]</span><span class="w"></span>
 </pre></div>
 
 
 <h4 id="options">Options<a class="headerlink" href="#options" title="Permanent link">#</a></h4>
-<div class="codehilite"><pre><span></span>  <span class="o">-</span><span class="nv">E</span>, <span class="o">--</span><span class="nv">email</span> <span class="nv">string</span>   <span class="nv">Email</span> <span class="nv">address</span> <span class="nv">of</span> <span class="nv">the</span> <span class="nv">user</span>
-  <span class="o">-</span><span class="nv">h</span>, <span class="o">--</span><span class="nv">help</span>           <span class="nv">help</span> <span class="k">for</span> <span class="nv">user</span>
+<div class="codehilite"><pre><span></span>  <span class="o">-</span><span class="nv">h</span>, <span class="o">--</span><span class="nv">help</span>          <span class="nv">help</span> <span class="k">for</span> <span class="nv">users</span>
+  <span class="o">-</span><span class="nv">N</span>, <span class="o">--</span><span class="nv">name</span> <span class="nv">string</span>   <span class="nv">Name</span> <span class="nv">of</span> <span class="nv">the</span> <span class="nv">group</span> <span class="nv">to</span> <span class="nv">list</span> <span class="nv">users</span> <span class="nv">in</span> <span class="ss">(</span><span class="k">if</span> <span class="nv">not</span> <span class="nv">specified</span>, <span class="nv">will</span> <span class="nv">default</span> <span class="nv">to</span> <span class="nv">all</span> <span class="nv">groups</span><span class="ss">)</span>
 </pre></div>
 
 
@@ -318,7 +318,7 @@
 
 <h4 id="see_also">SEE ALSO<a class="headerlink" href="#see_also" title="Permanent link">#</a></h4>
 <ul>
-<li><a href="../lagoon_delete/">lagoon delete</a>  - Delete a project, or delete notifications and variables from projects or environments</li>
+<li><a href="../lagoon_list/">lagoon list</a>  - List projects, deployments, variables or notifications</li>
 </ul>
                 
                   
