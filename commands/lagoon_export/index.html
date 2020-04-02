@@ -36,7 +36,7 @@
     
     
       
-        <title>Lagoon run custom - Lagoon CLI</title>
+        <title>Lagoon export - Lagoon CLI</title>
       
     
     
@@ -83,7 +83,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#lagoon_run_custom" tabindex="1" class="md-skip">
+      <a href="#lagoon_export" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -109,7 +109,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Lagoon run custom
+                Lagoon export
               
             </span>
           
@@ -227,8 +227,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#lagoon_run_custom" title="lagoon run custom" class="md-nav__link">
-    lagoon run custom
+  <a href="#lagoon_export" title="lagoon export" class="md-nav__link">
+    lagoon export
   </a>
   
     <nav class="md-nav">
@@ -284,29 +284,20 @@
               
                 
                 
-                  <h1>Lagoon run custom</h1>
+                  <h1>Lagoon export</h1>
                 
-                <h3 id="lagoon_run_custom">lagoon run custom<a class="headerlink" href="#lagoon_run_custom" title="Permanent link">#</a></h3>
-<p>Run a custom command on an environment</p>
+                <h3 id="lagoon_export">lagoon export<a class="headerlink" href="#lagoon_export" title="Permanent link">#</a></h3>
+<p>Export lagoon output to yaml</p>
 <h4 id="synopsis">Synopsis<a class="headerlink" href="#synopsis" title="Permanent link">#</a></h4>
-<p>Run a custom command on an environment
-The following are supported methods to use
-Direct:
-  lagoon run custom -p example -e master -N "My Task" -S cli -c "ps -ef"</p>
-<p>STDIN:
-  cat /path/to/my-script.sh | lagoon run custom -p example -e master -N "My Task" -S cli</p>
-<p>Path:
-  lagoon run custom -p example -e master -N "My Task" -S cli -s /path/to/my-script.sh</p>
-<div class="codehilite"><pre><span></span><span class="n">lagoon</span><span class="w"> </span><span class="n">run</span><span class="w"> </span><span class="n">custom</span><span class="w"> </span><span class="o">[</span><span class="n">flags</span><span class="o">]</span><span class="w"></span>
+<p>Export lagoon output to yaml
+You must specify to export a specific project by using the '-p <project-name>' flag</p>
+<div class="codehilite"><pre><span></span><span class="n">lagoon</span><span class="w"> </span><span class="n">export</span><span class="w"> </span><span class="o">[</span><span class="n">flags</span><span class="o">]</span><span class="w"></span>
 </pre></div>
 
 
 <h4 id="options">Options<a class="headerlink" href="#options" title="Permanent link">#</a></h4>
-<div class="codehilite"><pre><span></span>  <span class="o">-</span><span class="nv">c</span>, <span class="o">--</span><span class="nv">command</span> <span class="nv">string</span>   <span class="nv">The</span> <span class="nv">command</span> <span class="nv">to</span> <span class="nv">run</span> <span class="nv">in</span> <span class="nv">the</span> <span class="nv">task</span>
-  <span class="o">-</span><span class="nv">h</span>, <span class="o">--</span><span class="nv">help</span>             <span class="nv">help</span> <span class="k">for</span> <span class="nv">custom</span>
-  <span class="o">-</span><span class="nv">N</span>, <span class="o">--</span><span class="nv">name</span> <span class="nv">string</span>      <span class="nv">Name</span> <span class="nv">of</span> <span class="nv">the</span> <span class="nv">task</span> <span class="nv">that</span> <span class="nv">will</span> <span class="k">show</span> <span class="nv">in</span> <span class="nv">the</span> <span class="nv">UI</span> <span class="ss">(</span><span class="nv">default</span>: <span class="nv">Custom</span> <span class="nv">Task</span><span class="ss">)</span> <span class="ss">(</span><span class="nv">default</span> <span class="s2">&quot;</span><span class="s">Custom Task</span><span class="s2">&quot;</span><span class="ss">)</span>
-  <span class="o">-</span><span class="nv">s</span>, <span class="o">--</span><span class="nv">script</span> <span class="nv">string</span>    <span class="nv">Path</span> <span class="nv">to</span> <span class="nv">bash</span> <span class="nv">script</span> <span class="nv">to</span> <span class="nv">run</span> <span class="ss">(</span><span class="nv">will</span> <span class="nv">use</span> <span class="nv">this</span> <span class="nv">before</span> <span class="nv">command</span><span class="ss">(</span><span class="o">-</span><span class="nv">c</span><span class="ss">)</span> <span class="k">if</span> <span class="nv">both</span> <span class="nv">are</span> <span class="nv">defined</span><span class="ss">)</span>
-  <span class="o">-</span><span class="nv">S</span>, <span class="o">--</span><span class="nv">service</span> <span class="nv">string</span>   <span class="nv">Name</span> <span class="nv">of</span> <span class="nv">the</span> <span class="nv">service</span> <span class="ss">(</span><span class="nv">cli</span>, <span class="nv">nginx</span>, <span class="nv">other</span><span class="ss">)</span> <span class="nv">that</span> <span class="nv">should</span> <span class="nv">run</span> <span class="nv">the</span> <span class="nv">task</span> <span class="ss">(</span><span class="nv">default</span>: <span class="nv">cli</span><span class="ss">)</span> <span class="ss">(</span><span class="nv">default</span> <span class="s2">&quot;</span><span class="s">cli</span><span class="s2">&quot;</span><span class="ss">)</span>
+<div class="codehilite"><pre><span></span>      <span class="o">--</span><span class="nv">exclude</span> <span class="nv">strings</span>   <span class="nv">Exclude</span> <span class="nv">data</span> <span class="nv">from</span> <span class="nv">the</span> <span class="nv">export</span>. <span class="nv">Valid</span> <span class="nv">options</span> <span class="ss">(</span><span class="nv">others</span> <span class="nv">are</span> <span class="nv">ignored</span><span class="ss">)</span>: <span class="nv">users</span>, <span class="nv">project</span><span class="o">-</span><span class="nv">users</span>, <span class="nv">groups</span>, <span class="nv">notifications</span>, <span class="nv">project</span><span class="o">-</span><span class="nv">private</span><span class="o">-</span><span class="nv">keys</span> <span class="ss">(</span><span class="nv">default</span> [<span class="nv">project</span><span class="o">-</span><span class="nv">private</span><span class="o">-</span><span class="nv">keys</span>]<span class="ss">)</span>
+  <span class="o">-</span><span class="nv">h</span>, <span class="o">--</span><span class="nv">help</span>              <span class="nv">help</span> <span class="k">for</span> <span class="nv">export</span>
 </pre></div>
 
 
@@ -328,7 +319,7 @@ Direct:
 
 <h4 id="see_also">SEE ALSO<a class="headerlink" href="#see_also" title="Permanent link">#</a></h4>
 <ul>
-<li><a href="../lagoon_run/">lagoon run</a>    - Run a task against an environment</li>
+<li><a href="../lagoon/">lagoon</a>    - Command line integration for Lagoon</li>
 </ul>
                 
                   
