@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/amazeeio/lagoon-cli/internal/lagoon/client"
+	"github.com/amazeeio/lagoon-cli/pkg/lagoon/client"
 )
 
 type testStruct0 struct {

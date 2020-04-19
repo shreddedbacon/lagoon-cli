@@ -9,8 +9,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/amazeeio/lagoon-cli/internal/schema"
 	"github.com/amazeeio/lagoon-cli/pkg/api"
+	"github.com/amazeeio/lagoon-cli/pkg/schema"
 )
 
 // ErrExist indicates that an attempt was made to create an object that already

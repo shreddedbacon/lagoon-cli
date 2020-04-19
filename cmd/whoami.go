@@ -6,8 +6,8 @@ import (
 	"strings"
 
 	"github.com/amazeeio/lagoon-cli/internal/helpers"
-	"github.com/amazeeio/lagoon-cli/internal/lagoon"
-	"github.com/amazeeio/lagoon-cli/internal/lagoon/client"
+	"github.com/amazeeio/lagoon-cli/pkg/lagoon"
+	"github.com/amazeeio/lagoon-cli/pkg/lagoon/client"
 	"github.com/amazeeio/lagoon-cli/pkg/output"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"

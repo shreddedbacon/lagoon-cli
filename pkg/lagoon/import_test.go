@@ -7,9 +7,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/amazeeio/lagoon-cli/internal/lagoon"
+	"github.com/amazeeio/lagoon-cli/pkg/lagoon"
 	"github.com/amazeeio/lagoon-cli/internal/mock"
-	"github.com/amazeeio/lagoon-cli/internal/schema"
+	"github.com/amazeeio/lagoon-cli/pkg/schema"
 	"github.com/amazeeio/lagoon-cli/pkg/api"
 	"github.com/golang/mock/gomock"
 )

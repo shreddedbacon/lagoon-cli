@@ -6,9 +6,10 @@ package mock
 
 import (
 	context "context"
-	schema "github.com/amazeeio/lagoon-cli/internal/schema"
-	gomock "github.com/golang/mock/gomock"
 	reflect "reflect"
+
+	schema "github.com/amazeeio/lagoon-cli/pkg/schema"
+	gomock "github.com/golang/mock/gomock"
 )
 
 // MockImporter is a mock of Importer interface

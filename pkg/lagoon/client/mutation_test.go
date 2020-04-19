@@ -12,8 +12,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/amazeeio/lagoon-cli/internal/lagoon/client"
-	"github.com/amazeeio/lagoon-cli/internal/schema"
+	"github.com/amazeeio/lagoon-cli/pkg/lagoon/client"
+	"github.com/amazeeio/lagoon-cli/pkg/schema"
 	"github.com/google/uuid"
 )
 

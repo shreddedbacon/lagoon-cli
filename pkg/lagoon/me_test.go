@@ -6,7 +6,7 @@ import (
 	"testing"
 
 	"github.com/amazeeio/lagoon-cli/internal/mock"
-	"github.com/amazeeio/lagoon-cli/internal/schema"
+	"github.com/amazeeio/lagoon-cli/pkg/schema"
 	"github.com/golang/mock/gomock"
 )
 

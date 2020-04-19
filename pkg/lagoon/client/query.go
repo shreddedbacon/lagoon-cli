@@ -3,7 +3,7 @@ package client
 import (
 	"context"
 
-	"github.com/amazeeio/lagoon-cli/internal/schema"
+	"github.com/amazeeio/lagoon-cli/pkg/schema"
 )
 
 // ProjectByName queries the Lagoon API for a project by its name, and
