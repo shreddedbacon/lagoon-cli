@@ -2,7 +2,7 @@
 
 
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="no-js">
   <head>
     
@@ -32,7 +32,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.4">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.0">
     
     
       
@@ -40,9 +40,9 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application.451f80e5.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.0284f74d.css">
       
-        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.22915126.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.01803549.css">
       
       
         
@@ -51,16 +51,20 @@
       
     
     
-      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
     
     
       
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
     <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+    
+      
     
     
   </head>
@@ -79,7 +83,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="../../#lagoon_config_delete" tabindex="1" class="md-skip">
+      <a href="#lagoon_config_delete" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -100,22 +104,21 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            
-              <span class="md-header-nav__topic">
-                Lagoon CLI
-              </span>
-              <span class="md-header-nav__topic">
+            <span class="md-header-nav__topic">
+              Lagoon CLI
+            </span>
+            <span class="md-header-nav__topic">
+              
                 Lagoon config delete
-              </span>
-            
+              
+            </span>
           
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
@@ -138,7 +141,6 @@
     </div>
   </div>
 </div>
-          
         
       </div>
       
@@ -288,28 +290,28 @@
 <p>Delete a Lagoon instance configuration</p>
 <h4 id="synopsis">Synopsis<a class="headerlink" href="#synopsis" title="Permanent link">#</a></h4>
 <p>Delete a Lagoon instance configuration</p>
-<div class="codehilite"><pre><span></span>lagoon config delete [flags]
+<div class="codehilite"><pre><span></span><span class="n">lagoon</span><span class="w"> </span><span class="n">config</span><span class="w"> </span><span class="k">delete</span><span class="w"> </span><span class="o">[</span><span class="n">flags</span><span class="o">]</span><span class="w"></span>
 </pre></div>
 
 
 <h4 id="options">Options<a class="headerlink" href="#options" title="Permanent link">#</a></h4>
-<div class="codehilite"><pre><span></span>  -h, --help   help for delete
+<div class="codehilite"><pre><span></span>  <span class="o">-</span><span class="nv">h</span>, <span class="o">--</span><span class="nv">help</span>   <span class="nv">help</span> <span class="k">for</span> <span class="nv">delete</span>
 </pre></div>
 
 
 <h4 id="options_inherited_from_parent_commands">Options inherited from parent commands<a class="headerlink" href="#options_inherited_from_parent_commands" title="Permanent link">#</a></h4>
-<div class="codehilite"><pre><span></span>      --config-file string   Path to the config file to use (must be *.yml or *.yaml)
-      --debug                Enable debugging output (if supported)
-  -e, --environment string   Specify an environment to use
-      --force                Force yes on prompts (if supported)
-  -l, --lagoon string        The Lagoon instance to interact with
-      --no-header            No header on table (if supported)
-      --output-csv           Output as CSV (if supported)
-      --output-json          Output as JSON (if supported)
-      --pretty               Make JSON pretty (if supported)
-  -p, --project string       Specify a project to use
-      --skip-update-check    Skip checking for updates
-  -i, --ssh-key string       Specify path to a specific SSH key to use for lagoon authentication
+<div class="codehilite"><pre><span></span>      <span class="o">--</span><span class="nv">config</span><span class="o">-</span><span class="nv">file</span> <span class="nv">string</span>   <span class="nv">Path</span> <span class="nv">to</span> <span class="nv">the</span> <span class="nv">config</span> <span class="nv">file</span> <span class="nv">to</span> <span class="nv">use</span> <span class="ss">(</span><span class="nv">must</span> <span class="nv">be</span> <span class="o">*</span>.<span class="nv">yml</span> <span class="nv">or</span> <span class="o">*</span>.<span class="nv">yaml</span><span class="ss">)</span>
+      <span class="o">--</span><span class="nv">debug</span>                <span class="nv">Enable</span> <span class="nv">debugging</span> <span class="nv">output</span> <span class="ss">(</span><span class="k">if</span> <span class="nv">supported</span><span class="ss">)</span>
+  <span class="o">-</span><span class="nv">e</span>, <span class="o">--</span><span class="nv">environment</span> <span class="nv">string</span>   <span class="nv">Specify</span> <span class="nv">an</span> <span class="nv">environment</span> <span class="nv">to</span> <span class="nv">use</span>
+      <span class="o">--</span><span class="nv">force</span>                <span class="nv">Force</span> <span class="nv">yes</span> <span class="nv">on</span> <span class="nv">prompts</span> <span class="ss">(</span><span class="k">if</span> <span class="nv">supported</span><span class="ss">)</span>
+  <span class="o">-</span><span class="nv">l</span>, <span class="o">--</span><span class="nv">lagoon</span> <span class="nv">string</span>        <span class="nv">The</span> <span class="nv">Lagoon</span> <span class="nv">instance</span> <span class="nv">to</span> <span class="nv">interact</span> <span class="nv">with</span>
+      <span class="o">--</span><span class="nv">no</span><span class="o">-</span><span class="nv">header</span>            <span class="nv">No</span> <span class="nv">header</span> <span class="nv">on</span> <span class="nv">table</span> <span class="ss">(</span><span class="k">if</span> <span class="nv">supported</span><span class="ss">)</span>
+      <span class="o">--</span><span class="nv">output</span><span class="o">-</span><span class="nv">csv</span>           <span class="nv">Output</span> <span class="nv">as</span> <span class="nv">CSV</span> <span class="ss">(</span><span class="k">if</span> <span class="nv">supported</span><span class="ss">)</span>
+      <span class="o">--</span><span class="nv">output</span><span class="o">-</span><span class="nv">json</span>          <span class="nv">Output</span> <span class="nv">as</span> <span class="nv">JSON</span> <span class="ss">(</span><span class="k">if</span> <span class="nv">supported</span><span class="ss">)</span>
+      <span class="o">--</span><span class="nv">pretty</span>               <span class="nv">Make</span> <span class="nv">JSON</span> <span class="nv">pretty</span> <span class="ss">(</span><span class="k">if</span> <span class="nv">supported</span><span class="ss">)</span>
+  <span class="o">-</span><span class="nv">p</span>, <span class="o">--</span><span class="nv">project</span> <span class="nv">string</span>       <span class="nv">Specify</span> <span class="nv">a</span> <span class="nv">project</span> <span class="nv">to</span> <span class="nv">use</span>
+      <span class="o">--</span><span class="nv">skip</span><span class="o">-</span><span class="nv">update</span><span class="o">-</span><span class="nv">check</span>    <span class="nv">Skip</span> <span class="nv">checking</span> <span class="k">for</span> <span class="nv">updates</span>
+  <span class="o">-</span><span class="nv">i</span>, <span class="o">--</span><span class="nv">ssh</span><span class="o">-</span><span class="nv">key</span> <span class="nv">string</span>       <span class="nv">Specify</span> <span class="nv">path</span> <span class="nv">to</span> <span class="nv">a</span> <span class="nv">specific</span> <span class="nv">SSH</span> <span class="nv">key</span> <span class="nv">to</span> <span class="nv">use</span> <span class="k">for</span> <span class="nv">lagoon</span> <span class="nv">authentication</span>
 </pre></div>
 
 
@@ -345,20 +347,15 @@
           Material for MkDocs</a>
       </div>
       
-        
-      
     </div>
   </div>
 </footer>
       
     </div>
     
-      <script src="../../assets/javascripts/application.583bbe55.js"></script>
+      <script src="../../assets/javascripts/application.245445c6.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
-      
-    
-    
       
     
   </body>
